@@ -18,6 +18,10 @@ export class ShoppingCardPage{
         let totalPrice = productData.product1.price + productData.product2.price;
         cy.get('#price').contains(`${totalPrice}`).should('have.text', totalPrice);
     }
+    clickGoToCheckOut() {
+        cy.xpath("//button[text()='Go to Checkout']").click();
+        
+    } 
   
 
 };      

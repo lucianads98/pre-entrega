@@ -1,8 +1,8 @@
 {
-  "name": "pre-entrega",
+  "name": "entrega",
   "version": "1.0.0",
   "description": "",
-  "main": "preEntrega.js",
+  "main": "entregaFinal.cy.js",
   "scripts": {
     "test": "npx cypress open --e2e -b chrome"
   },
