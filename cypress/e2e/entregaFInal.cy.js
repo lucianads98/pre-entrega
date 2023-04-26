@@ -14,6 +14,7 @@ describe("pre entrega", () => {
   const productPage = new ProductPage();
   const shoppingCardPage = new ShoppingCardPage();
   const checkoutPage = new CheckOut();
+  
 
   const username = "Luciana De Souza";
   const password = "222233!";
@@ -78,7 +79,7 @@ describe("pre entrega", () => {
     shoppingCardPage.checkTotalPrice(productData);
     shoppingCardPage.clickGoToCheckOut();
     checkoutPage.completeData(cardData.name, cardData.lastName, cardData.cardNumber); 
-    cy.wait(10000);
+
     checkoutPage.checkTicket(cardData.name, cardData.lastName, cardData.cardNumber, productData);
 
       
